@@ -1,5 +1,5 @@
 <?php
-$conexion = mysqli_connect('localhost', 'root', '', 'producto 2');
+$conexion = mysqli_connect('localhost:3306', 'wordpress20', 'v2agwoku4Q54ij3M', 'wordpress20');
 ?>
 <!DOCTYPE html>
 <html>

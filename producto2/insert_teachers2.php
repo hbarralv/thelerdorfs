@@ -1,5 +1,5 @@
 <?php
-$bbdd = new PDO('mysql:host=localhost;dbname=producto 2', 'root', '', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'utf8'"));
+$bbdd = new PDO('mysql:host=localhost:3306;dbname=wordpress20', 'wordpress20', 'v2agwoku4Q54ij3M', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'utf8'"));
 ?>
 
 <html>
