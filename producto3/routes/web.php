@@ -7,6 +7,8 @@ use App\Http\Controllers\CoursesController;
 use App\Http\Controllers\ExamController;
 use App\Http\Controllers\ScheduleController;
 use App\Http\Controllers\WorkController;
+use App\Http\Controllers\StudentController;
+use App\Http\Controllers\EnrollmentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,7 +24,7 @@ use Illuminate\Support\Facades\Route;
 
 // Punto de entrada "/", redireciona a /ingresar (login)
 Route::get('/', function(){
-    return redirect("/ingresar");
+    return redirect("/registro");
 });
 
 // Autenticación
@@ -61,8 +63,14 @@ Route::post('/panel/trabajos/nota', [WorkController::class, 'ponerNota']);
 
 Route::post('/panel/trabajos', [WorkController::class, 'crearTrabajo']);
 
+// Students
+Route::get('/panel/estudiantes', [StudentController::class, 'mostrarEstudiantes']);
+
 // Exams
 Route::get('/panel/examenes', [ExamController::class, 'mostrarExamenes']);
 Route::post('/panel/examenes/nota', [ExamController::class, 'ponerNota']);
 Route::post('/panel/examenes/eliminar', [ExamController::class, 'eliminarExamen']);
 Route::post('/panel/examenes', [ExamController::class, 'crearExamen']);
+
+// Enrollments
+Route::get('/panel/inscripciones', [EnrollmentController::class, 'mostrarInscripciones']);

@@ -21,7 +21,6 @@ class EnrollmentController extends BaseController
 
     function mostrarInscripciones()
     {
-
         $rol = request()->cookie('rol');
         $id = request()->cookie('id');
 

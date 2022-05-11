@@ -12,12 +12,12 @@ class Enrollment extends Model
      * @var string
      */
 
-    protected $table = 'enrollments';
+    protected $table = 'enrollment';
     protected $fillable = ['id_student',    'id_course',    'status'];
     protected $primaryKey = 'id_exam';
     public function class()
     {
-        return $this->belongsTo(Courses::class, 'id_course');
+        return $this->belongsTo(ClassModel::class, 'id_course');
     }
     public function student()
     {

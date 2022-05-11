@@ -1,9 +1,12 @@
     <nav>
         <ul>
             @if (str_contains($rol, 'PROFESOR') || str_contains($rol, 'ADMIN'))
-            <!--si entro como Admin te muestra las clases y todos pueden entrar en trabajos y exámenes-->
+            <!--si entro como Admin te muestra las clases y estudiantes y todos pueden entrar en trabajos y exámenes-->
             <li>
                 <a href='/panel/clases'>Clases</a>
+            </li>
+            <li>
+                <a href='/panel/estudiantes'>Estudiantes</a>
             </li>
             @endif
             <li>
@@ -25,7 +28,7 @@
             @if (str_contains($rol, 'ESTUDIANTE'))
             <!--Solo el estudiante puede ir a las inscripciones-->
             <li>
-                <a href='/panel/inscripiones'>Mis inscripciones</a>
+                <a href='/panel/inscripciones'>Mis inscripciones</a>
             </li>
             @endif
         </ul>
