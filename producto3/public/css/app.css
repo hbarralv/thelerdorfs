@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+span {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input:not([type='checkbox']),
+select {
+    appearance: none;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.form-control {
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+button {
+    appearance: none;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: black;
+    color: white;
+}
+
+a:visited {
+    color: black;
+}
+
+.table {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.table li {
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.color {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.aquamarine {
+    background-color: aquamarine;
+}
+
+.cyan {
+    background-color: cyan;
+}
+
+input span {
+    margin-bottom: 1rem;
+}
+
+nav {
+    margin-bottom: 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0;
+    margin-right: .5rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
