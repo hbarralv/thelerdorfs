@@ -8,6 +8,7 @@ use App\Http\Controllers\ExamController;
 use App\Http\Controllers\ScheduleController;
 use App\Http\Controllers\WorkController;
 use App\Http\Controllers\StudentController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\EnrollmentController;
 use Illuminate\Support\Facades\Route;
 
@@ -65,6 +66,10 @@ Route::post('/panel/trabajos', [WorkController::class, 'crearTrabajo']);
 
 // Students
 Route::get('/panel/estudiantes', [StudentController::class, 'mostrarEstudiantes']);
+
+// Perfil estudiantes
+Route::get('/perfil', [ProfileController::class, 'mostrarPerfil']);
+Route::post('/perfil', [ProfileController::class, 'actualizarPerfil']);
 
 // Exams
 Route::get('/panel/examenes', [ExamController::class, 'mostrarExamenes']);

@@ -30,6 +30,9 @@
             <li>
                 <a href='/panel/inscripciones'>Mis inscripciones</a>
             </li>
+            <li>
+                <a href='/perfil'>Perfil</a>
+            </li>
             @endif
         </ul>
     </nav>
